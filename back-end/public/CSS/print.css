@@ -1,0 +1,23 @@
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    color: #a6a4a4;
+    font-weight: normal; 
+}
+
+#addOnMenu, #mapTabs, #regByNumber, #localTime,   #logo, .logo,
+.ui-tabs-nav, .side_menu, .topHandler  {
+    display: none !important;
+}
+
+.productImage{
+    position:absolute;
+    right:10px;
+    top: -1px;
+}
+
+#orderDelivery td{
+    min-width: 250px;
+}
+

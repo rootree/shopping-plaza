@@ -1,0 +1,12 @@
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    color: #a6a4a4;
+    font-weight: normal; 
+}
+
+.login, .add, .top-menu, DIV#footer, TD.leftSide, #form1 {
+    display: none;
+}
+ 

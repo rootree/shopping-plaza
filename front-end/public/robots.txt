@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: http://c-net-shopping.ru/sitemap.xml
+Disallow: /cgi-bin/
+Disallow: /system/
+Disallow: /cron/
+Disallow: /application/

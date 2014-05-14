@@ -1,0 +1,37 @@
+
+
+body {}
+/* typography  */
+
+a {}
+
+a:hover{}
+
+h2 {}
+
+p{}
+
+/* typography wrp  */
+div#wrp a { }
+div#wrp a:hover { }
+div#wrp h3 { }
+
+/* typography left sidebar main menu  */
+div#content div#l-side ul li.active a.li-active{ }
+div#content div#l-side ul li.active a.li-active span {  }
+div#content div#l-side ul li a span { }
+/* typography left sidebar child main menu  */
+div#content div#l-side ul li ul li a{}
+div#content div#l-side ul li ul li a:hover{}
+
+/* title catalog h3 */
+
+div#wrp div.left-catalog h3 { }
+div#wrp div.right-catalog h3 {}
+
+/* wrp  */
+div#wrp { }
+
+/* left sidebar */
+div#content div#l-side div.l-side-menu {}
+

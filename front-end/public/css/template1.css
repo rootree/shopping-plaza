@@ -1,0 +1,276 @@
+@import url('change.css'); 
+
+div#logo a{
+    color:#3D959E;
+}
+
+ 
+
+ul.top-menu li.current a {
+    color: #27938e; 
+}
+ul.top-menu > li a:hover {
+    color: #27938e; 
+}
+a.news-link:hover {
+    color: #61b0ac; 
+}
+div#content div#wrp a:hover {
+    color: #27938e;
+}
+div#footer ul.footer-menu li.more ul {
+    background: #5cb7a3;
+}
+div#wrp div.web table {
+    color: #61b0ac;
+    background: #eef8f2;
+}
+div#wrp div.podtv .cartList .price2 {
+    color: #61b0ac;
+}
+div#content div#l-side div.l-side-menu {
+    background: #eef8f2;
+}
+
+div#content div#l-side ul li ul li a:hover {
+    color: #9ed3d1;
+}
+div#wrp div.web  .table2 {
+    background: #eef8f2;
+}
+
+TD.itemParam{
+    background: #EEF8F2;
+}
+
+
+
+
+
+div#header {
+    background: url(../img.template1/bg/header.jpg) repeat-x;
+}
+
+
+div#header-content .add {
+    background: url(../img.template1/bg/add.gif) no-repeat;
+}
+
+div.status-bar  div.login p.reg {
+    background: url(../img.template1/icons/reg.gif) left 1px no-repeat;
+}
+
+div.status-bar  div.login p.auto {
+    background: url(../img.template1/icons/auto.gif) left 0px no-repeat;
+}
+
+ul.top-menu {
+    background: url(../img.template1/bg/top-menu.jpg) repeat-x;
+}
+
+ul.top-menu li.current {
+    background: url(../img.template1/bg/li.png) no-repeat;
+}
+
+ul.top-menu li.current a {
+    background: url(../img.template1/bg/li_a.png) no-repeat right;
+}
+
+
+ul.top-menu > li a:hover {
+    background: url(../img.template1/bg/li_a.png) no-repeat right;
+}
+
+ul.top-menu > li:hover {
+    background: url(../img.template1/bg/li.png) no-repeat;
+}
+
+ul.top-menu > li.bullet {
+    background: url(../img.template1/bg/bullet.jpg) no-repeat;
+}
+
+ul.top-menu > li.more a.up {
+    background: url(../img.template1/bg/up.gif) right 24px no-repeat;
+}
+
+ul.top-menu > li.more:hover a.up {
+    background: url(../img.template1/bg/down.gif) right 24px no-repeat;
+}
+ul.top-menu  li.more ul {
+    background: url(../img.template1/bg/ul_opacity.png);
+}
+div#content div#l-side p.prise { 
+    background: url(../img.template1/prise.gif) no-repeat;
+}
+
+div#content div#l-side ul li.active {
+    background: url(../img.template1/bg/l-side-li.png) no-repeat;
+}
+
+div#content div#l-side ul li.active a.li-active {
+    background: url(../img.template1/bg/l-side-li-a.png) right top no-repeat;
+}
+
+div#content div#l-side ul li ul li {
+    background: url(../img.template1/bg/arrow.gif) left 50% no-repeat;
+}
+
+
+div#content div#l-side ul li ul li:hover {
+    background: url(../img.template1/bg/arrow_blue_t.gif) left 50% no-repeat;
+}
+
+a.news-link { 
+    background: url(../img.template1/bg/arrow_black.gif) right 5px no-repeat;
+}
+
+a.news-link:hover {
+    background: url(../img.template1/bg/arrow_blue.gif) right 5px no-repeat;
+}
+
+#form1 input[type="text"] {
+    background: url(../img.template1/bg/input.gif) right 50% no-repeat; 
+}
+
+div#wrp div.new div p.cost {
+    background: url(../img.template1/bg/buy.gif) no-repeat;
+}
+div#footer ul.footer-menu {
+    background: url(../img.template1/bg/footer.gif) top repeat-x;
+}
+div#footer ul.footer-menu li.more {
+    background: url(../img.template1/bg/footer_up.gif) no-repeat right 30px;
+}
+
+div#footer ul.footer-menu li.more:hover {
+    background: url(../img.template1/bg/footer_down.gif) no-repeat right 30px;
+}
+
+div#wrp ul li {
+    background: url(../img.template1/bg/arrow_black.gif)  no-repeat left 7px  ;
+}
+
+div#wrp ul li:hover {
+    background: url(../img.template1/bg/arrow_blue.gif)  no-repeat left 7px  ;
+}
+
+div#wrp div.web ul > li {
+    background: url(../img.template1/bg/web-li.gif) left 5px no-repeat;
+}
+
+div#wrp div#request div.contact-face input[type="submit"] {
+    background: url(../img.template1/icons/sub.png) no-repeat;
+}
+div#wrp div.adress .svyazForm input[type="submit"] {
+    background: url(../img.template1/icons/send.png) no-repeat;
+}
+
+#deliverySubmit {
+    background: url(../img.template1/icons/send.png) no-repeat;
+}
+
+div#wrp div.podtv .cartList .top {
+    background: url(../img.template1/icons/cartTableBg.gif) repeat-x;
+}
+
+div#wrp div.podtv .cartList .top td {
+    background: url(../img.template1/icons/line.gif) no-repeat right;
+}
+
+
+
+div#wrp div.podtv #yes  input[type="submit"] { 
+    background: url(../img.template1/icons/yes.png) no-repeat; 
+}
+ 
+div#wrp div.podtv .allPrice .itogo2 {
+    background: url(../img.template1/bg/buy.gif) no-repeat right;
+}
+
+div#wrp div.podtv #oformit input[type="submit"] {
+    background: url(../img.template1/icons/oformit.png) no-repeat;
+}
+
+div#wrp div.notebook .gallery .img .ico-new {
+    background: url(../img.template1/icons/new.png) no-repeat;
+}
+
+div#wrp div.notebook .descriptionBg .ygol {
+    background: url(../img.template1/icons/ygol.png) no-repeat;
+}
+
+
+div#wrp div.notebook  #buy input[type="submit"] {
+    background: url(../img.template1/icons/buy.png) no-repeat;
+}
+
+
+
+div#wrp div.notebook  #buyFoot input[type="submit"] {
+    background: url(../img.template1/icons/buy.png) no-repeat;
+}
+
+.kolvo .ygol2 {
+    background: url(../img.template1/icons/kolvo.png) no-repeat; 
+}
+
+
+div#wrp ul li {
+    background: url(../img.template1/bg/arrow_black.gif)  no-repeat left 7px  ;
+}
+
+.binEdit{
+    text-align:center; width: 40px;
+}
+
+
+
+
+#logo a {
+   font: normal 27px tahoma;
+   position: relative;
+   background: #F5FBF7;
+   color: #0cf;
+}
+#logo a vat {
+   position: absolute;
+   top: -1px;
+   left: 0;
+   width: 100%;
+   height: 13px;
+   background: #F5FBF7; /* цвет накладываемого блока, должен совпадать с цветом фона основного блока */
+   overflow: hidden;
+   opacity: 0.15;
+   filter: alpha(opacity=15);
+}
+#logo a span {
+   position: absolute;
+   top: 19px;
+   left: 0;
+   width: 100%;
+   height: 15px;
+   background: #F5FBF7; /* цвет накладываемого блока, должен совпадать с цветом фона основного блока */
+   overflow: hidden;
+   opacity: 0.35;
+   filter: alpha(opacity=35);
+}
+
+.firmDesc{
+    padding-top: 3px;
+    text-shadow: 0px 1px 3px #cccccc; 
+    zoom: 1;
+	color: #5F5D5D;
+	background-color: #F4FAF6;
+	filter: progid:DXImageTransform.Microsoft.Chroma(color=#F4FAF6),
+	        progid:DXImageTransform.Microsoft.Blur(pixelradius=0);
+}
+
+.mainPhone{
+    font-size: 22px !important;
+    color:#666666;
+    float:right;
+    font-family: Tahoma, Geneva, sans-serif;;	text-shadow: 0px 1px 1px #cccccc; 
+    background: #F5FBF7;
+    margin-right: 5%;
+}
+ 

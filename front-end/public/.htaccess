@@ -1,0 +1,35 @@
+AddType "text/xml;  charset=utf-8"    xml
+
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymlinks
+Options +SymLinksIfOwnerMatch
+
+
+RewriteRule ^(favicon.ico|animated_favicon1.gif|index.php|sitemap.xml|robots.txt|favicon.ico|avatars_mini|avatars|highslide|desc_img|img|js|CSS|css) - [PT,L]
+
+# Protect application and system files from being viewed
+RewriteRule ^application|modules|system|upload(.*)$ - [F,L]
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
+
+
+
+
+  

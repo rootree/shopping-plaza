@@ -1,0 +1,1194 @@
+/* BACKPACKIT ----------------------------------------------------*/
+
+div.logo_backpack {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: -10px;
+  float: left;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, sans-serif;
+	background-color: #F5F6F7;
+	text-align: center;
+}
+
+p {
+	color: #222;
+}
+
+img { -ms-interpolation-mode:bicubic; }
+
+div.action {
+  background-color: #d2eeae;
+}
+
+div.action h2 {
+	color: #4c4b35;
+}
+
+div.action h2 a {
+	color: #4c4b35;
+}
+
+/* STRUCTURE --------------------------------------------------*/
+
+div.site_header {
+	border-bottom: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+	height: 50px;
+}
+
+div.header {
+  height: 50px;
+}
+
+div.header img {
+  margin-top: 3px;
+}
+
+div.header div.links, div.header div.sign_links {
+  margin-top: 5px;
+}
+
+div.pageband {
+	margin: 0 0 25px 0;
+	padding: 0;
+	width: 100%;
+	background-color: #d2eeae;
+	border-bottom: 1px solid #dadfcb;
+	background-image: url(/publicIMG/texture.png);
+}
+
+div.pagetitle {
+  padding: 0;
+	height: 50px;
+}
+
+div.pagetitle h1 {
+  font-family: helvetica, arial sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 11px 0 0 0;
+	text-align: left;
+}
+
+div.site_header div.links, div.inner div.sign_links {
+  margin-top: 2px;
+}
+
+div.header div.links, div.inner div.links {
+  float: left;
+  margin-right: 20px;
+}
+
+div.header div.links a, div.inner div.links a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+div.header div.links a:hover, div.inner div.links a:hover {
+  border-bottom: 2px solid #86b226;
+}
+
+div.header div.sign_links, div.inner div.sign_links {
+  float: left;
+}
+
+div.header div.sign_links a, div.inner div.sign_links a {
+  color: #bcfc3d;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+div.header div.sign_links a:hover, div.inner div.sign_links a:hover {
+  border-bottom: 2px solid #86b226;
+}
+
+
+
+/* SIGNUP4 ----------------------------------------------------*/
+
+body.signup div.bubble div.content {
+  width: 250px;
+}
+
+body.signup div.bubble div.content div.inner h2 {
+  font-size: 14px;
+}
+
+body.signup div.bubble div.content div.inner p {
+  font-size: 11px;
+}
+
+body.signup4 div.short {
+	width: 220px;
+	height: 280px;
+	border: 1px solid #999;
+	float: left;
+	margin-top: 22px;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #efefef;
+	font-family: helvetica, arial, sans-serif;
+}
+
+body.signup4 div.short h3 {
+	font-size: 11px;
+}
+
+body.signup4 div.tall {
+	width: 220px;
+	height: 320px;
+	border: 3px solid #3671A1;
+	float: left;
+	text-align: center;
+	padding: 8px 10px 10px 10px;
+	background-color: #fff;
+	font-family: helvetica, arial, sans-serif;
+}
+
+body.signup4 div.no-r {
+	border-right: 0;
+}
+
+body.signup4 div.r-shadow {
+	background-image: url(/publicIMG/shadow-right.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+body.signup4 div.no-l {
+	border-left: 0;
+}
+
+body.signup4 div.short li, body.signup4 div.tall li {
+	font-size: 14px;
+	color: #64503f;
+	font-family: helvetica, arial, sans-serif;
+	margin-bottom: 1px;
+	line-height: 1.1em;
+}
+
+body.signup4 div.tall li {
+	font-size: 16px;
+}
+
+body.signup4 div.tall ul, body.signup4 div.short ul {
+	list-style: none;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+body.signup4 div.tall ul.highlight, div.short ul.highlight {
+	margin-top: 0;
+}
+
+body.signup4 div.tall ul.highlight li, div.short ul.highlight li {
+	list-style: none;
+	margin-bottom: 3px;
+	font-size: 20px;
+	line-height: 1em;
+}
+
+body.signup4 div.tall ul.highlight li {
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+body.signup4 div.under_chart_left, body.signup4 div.under_chart_right {
+	width: 435px;
+	position: relative;
+	top: -44px;
+	font-size: 11px;
+	float: left;
+	font-family: verdana;
+	text-align: center;
+} 
+
+body.signup4 div.under_chart_right {
+	float: right;
+}
+
+body.signup4 div.logos {
+	width: 240px; 
+	float: right; 
+	border: 1px solid #ccc; 
+	padding: 10px; 
+	text-align: center;
+}
+
+body.signup4 div.logos h1 {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+body.signup4 div.logos img {
+	margin-bottom: 15px;
+}
+
+body.signup4 div.extra {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+/* BUZZ ----------------------------------------------------*/
+
+body.buzz div.top {
+  border: 0;
+	background-color: #F5F6F7;
+	background-image: none;
+}
+
+div.press {
+  background-color: #e8ecdc;
+  text-align: left;
+  padding: 15px 15px 15px 25px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+	background-image: url(/publicIMG/texture.png);
+}
+
+div.loginE {
+  background-color: #e8ecdc;
+  text-align: left; 
+  font-family: Georgia, serif;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+	background-image: url(/publicIMG/BGG.png);
+}
+
+div.press img {
+  margin: 10px 10px 10px 50px;
+}
+
+div.press h3 {
+  color: #222;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 25px 0 15px 0;
+}
+
+body.buzz div.statement h2 {
+  color: #3671a1;
+}
+
+body.buzz h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #666;
+  font-weight: normal;
+  margin: 0;
+}
+
+div.customerquotes {
+  width: 440px;
+  text-align: left;
+  padding: 0 15px 0 0;
+  margin: 0 40px 50px 0;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5 em;
+  float: left;
+}
+
+div.end {
+  margin-right: 0;
+}
+
+div.customerquotes h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin: 40px 0 5px 0;
+}
+
+div.customerquotes p {
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  margin: 10px 0 0 0;
+}
+
+div.quotehighlight {
+	font-family: Georgia, serif;
+  font-size: 14px;
+  color: #666;
+	background-image:none;
+	padding: 20px;
+	margin: 40px 0 0 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+div.quotehighlight h6 {
+  color: #3671a1;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0 0 15px 0;
+}
+
+div.customerlogos {
+  float: right;
+  width: 360px;
+  text-align: left;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+div.customerlogos img {
+  margin: 25px 25px 0 0;
+}
+
+div.customerlogos img.last {
+  margin: 25px 0 0 0;
+}
+
+div.customerlogos p {
+  margin-top: 30px;
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  color: #666;
+}
+
+body.buzz div.statement h2 {
+	font-size: 30px;
+}
+
+/* EXTRAS ----------------------------------------------------*/
+
+div.api {
+  width: 165px;
+  float: right;
+  background-image: url(/publicIMG/bkgd_api.jpg);
+  background-repeat: no-repeat;
+  padding: 15px;
+  text-align: left;
+  font-family: Verdana, sans-serif;
+  font-size: 11px; color: #666;
+}
+
+div.api h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  margin: 10px 0 15px 0;
+}
+
+div.apps {
+  text-align: left;
+  width: 740px;
+}
+
+div.apps h2 {
+  font-family: Georgia, serif;
+  color: #222;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+div.appgroup {
+  border-top: 1px solid #ccc;
+  margin: 30px 0 0 0;
+}
+
+div.appgroup h3 {
+  margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.2em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+div.appgroup table {
+  margin: 30px 0 0 0;
+}
+
+div.appgroup td {
+  padding:0;
+  text-align: left;
+}
+
+div.appgroup td.description {
+  padding: 5px 15px 30px 0;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+}
+
+div.appgroup td.iphone {
+  padding: 0 20px 10px 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+	height: 100px;
+}
+
+div.appgroup h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 5px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+div.appgroup img {
+  border: 1px solid #ccc;
+	padding: 1px;
+}
+
+div.appgroup img.iphone {
+  border: 0;
+	padding: 0;
+}
+
+/* PRINTER FRIENDLY ----------------------------------------*/
+
+body.print h2 {
+  margin: 0 0 15px 0;
+}
+
+body.print div.api {
+  font-size: 14px;
+  font-family: Georgia, serif;
+  line-height: 1.4em;
+}
+
+/* HELP ----------------------------------------------------*/
+
+div.helpsidebar {
+  width: 165px;
+  float: right;
+  background-image: url(/publicIMG/bkgd_api.jpg);
+  background-repeat: no-repeat;
+  padding: 15px;
+  text-align: left;
+  font-family: Verdana, sans-serif;
+  font-size: 11px; color: #666;
+}
+
+div.helpsidebar h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  margin: 10px 0 15px 0;
+  line-height: 1.3em;
+}
+
+div.helpcontent {
+  text-align: left;
+  width: 720px;
+}
+
+div.helpcontent h2 {
+  font-family: Georgia, serif;
+  color: #222;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+/* body.help div.video {
+  background-color: #efefef;
+  padding: 15px;
+  padding-left: 10px;
+  width: 375px;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+}
+
+body.help div.video img {
+  margin-right: 5px;
+} */
+
+div.faqgroup {
+  border-top: 1px solid #ccc;
+  margin: 30px 0 0 0;
+}
+
+body.help div.top {
+  border: 1px solid #ff9900;
+  background-color: #ffffcc;
+  padding: 15px;
+  background-image: none;
+  width: auto;
+}
+
+div.faqgroup h3 {
+  margin: 10px 0 15px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.2em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+div.faqgroup h3 a {
+	color: #000;
+}
+
+div.faqgroup ul {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+div.faqgroup li {
+  margin-bottom: 5px;
+}
+
+div.faqgroup li.more {
+  list-style-type:none;
+  margin-top: 10px;
+  text-transform: none;
+}
+
+div.help_nav {
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  color: #999;
+}
+
+div.help_entry {
+  margin: 50px 0;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+
+div.help_entry h2 {
+  margin-bottom: 10px;
+}
+
+body.help div.support_form {
+  margin-bottom: 30px;
+}
+
+body.help div.support_form p.details {
+	font-size: 11px;
+	font-family: verdana;
+	margin-bottom: 4px;
+}
+
+body.help div.support_form textarea {
+	width: 550px;
+	height: 200px;
+	font-family: courier,monospace;
+	font-size: 14px;
+	padding: 3px;
+	background-color: #fdfef1;
+}
+
+body.help div.support_form input {
+	width: 550px;
+	font-family: courier,monospace;
+	font-size: 14px;
+	padding: 3px;
+	background-color: #fdfef1;
+}
+
+body.help div.support_form input.shorter {
+	width: 350px;
+}
+
+div.support_form hr {
+	margin: 20px 0;
+}
+
+body.help div.support_form input.button {
+	width: auto;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-family: verdana;
+	background-color: #fff;
+}
+
+body.help div.support_form select {
+	font-size: 18px;
+	padding: 3px;
+}
+
+div.support_form h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0 2px 0;
+	color: #000;
+}
+
+body.help div.support_form h2 span {
+	font-size: 12px;
+	font-weight: normal;
+	color: #393;
+	font-style: italic;
+}
+
+body.help div.question_before_contact a.not_listed {
+	font-size: 11px;
+	font-family: verdana;
+}
+
+/* UPGRADE --------------------------------------------------*/
+
+body.upgrade div.helpsidebar {
+  width: 240px;
+  /* background-image: url(bkgd_upgrade.jpg); */
+  background-image: none;
+}
+
+body.upgrade div.helpsidebar img {
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+body.upgrade div.helpsidebar p {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+body.upgrade div.helpcontent {
+  width: 650px;
+}
+
+body.upgrade div.helpcontent h1 {
+  text-align: left;
+}
+
+body.upgrade div.help_entry {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+body.upgrade div.tour {
+  overflow: hidden;
+}
+
+body.upgrade div.tour img {
+  border: 0;
+}
+
+/* DEMOS ----------------------------------------------------*/
+
+body.demos div.navcontainer {
+  text-align: left;
+  padding: 0;
+  margin: 15px 0 15px 40px;
+}
+
+body.demos table.nav td {
+  padding: 5px;
+}
+
+body.demos table.nav td.links {
+  padding: 6px 0 0 10px;
+  color: #ccc;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+}
+
+
+/* NEW HOME (2) ----------------------------------------------------*/
+
+body.home2 div.header {
+	background-color: #222;
+	font-size: 14px;
+	line-height: 1.7em;
+}
+
+body.home2 div.header img {
+	float: right;
+}
+
+body.home2 div.header div.container {
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: left;
+	color: #666;
+}
+
+body.home2 div.container {
+	width: 980px;
+	clear: both;
+	overflow: hidden;
+}
+
+body.home2 div.pitch {
+	height: 400px;
+	/* background-image: url(home-screenshot.png); */
+	background-position: right;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+body.home2 div.pitch h1 {
+	font-size: 41px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	letter-spacing: -2px;
+	line-height: 1.0em;
+	text-align: left;
+	color: #000;
+}
+
+body.home2 div.pitch h2 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #222;
+	font-family: georgia, times;
+}
+
+body.home2 div.pitch h3 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #555;
+	font-family: georgia, times;
+}
+
+body.home2 div.content {
+	margin: 20px;
+}
+
+body.home2 div.pages h2, div.action h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #222;
+	font-family: georgia, times;
+}
+
+body.home2 div.pages {
+	overflow: hidden;
+	border-top: 1px solid #ccc;
+	margin: 30px 0 0 0;
+	padding: 25px 15px 0 15px;
+	text-align: left;
+}
+
+body.home2 div.pages h3, div.more h3 {
+  margin: 0;
+	padding: 0;
+	font-size: 29px;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: #222;
+	font-family: georgia, times;
+}
+
+body.home2 div.pages div.action {
+  margin-top: 0;
+}
+
+body.home2 div.action cite {
+	color: #666;
+	font-size: 16px;
+}
+
+body.home2 div.action h3 {
+	font-size: 16px;
+	font-family: georgia, times;
+	font-weight: normal;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+body.home2 div.more {
+  overflow: hidden;
+	margin: 0;
+	padding: 0 15px;
+	text-align: left;
+}
+
+body.home2 table.more {
+  margin: 30px 0;
+}
+
+body.home2 table.more td {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  padding-right: 15px;
+  line-height: 1.3em;
+}
+
+body.home2 table.more td.signup {
+  padding: 0; 
+  text-align: center;
+  font-size: 16px;
+}
+
+body.home2 table.more img {
+  margin-bottom: 10px;
+}
+
+body.home2 table.more h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body.home2 div.blurb h2, table.more h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.2em;
+	color: #3671A1;
+	text-transform: uppercase;
+}
+
+body.home2 div.blurb {
+	width: 450px;
+	margin: 15px;
+	float: left;
+}
+
+body.home2 div.blurb p {
+	font-family: georgia;
+	font-size: 15px;
+	line-height: 1.3em;
+	margin: 0 0 30px 0;
+}
+
+body.home2 div.extras {
+	width: 100%;
+	text-align: left;
+	font-weight: normal;
+}
+
+body.home2 div.action img.button {
+	margin-bottom: 10px;
+}
+
+body.home2 table.press {
+  width: 980px;
+}
+
+body.home2 table.press td {
+  text-align: center;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  color: #222;
+}
+
+body.home2 div.tour, {
+	text-align: left;
+	font-weight: normal;
+	margin: 15px 0;
+	padding: 0 0 15px 0;
+	float: left;
+	font-size: 24px;
+	width: 100%;
+}
+
+body.home2 div.tour h3, body.upgrade div.tour h3 {
+	font-size: 16px;
+	font-family: georgia, times;
+	font-weight: normal;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+body.home2 div.scenario {
+  clear: both;
+  overflow: hidden;
+  text-align: left;
+  padding: 15px 0;
+  width: 100%;
+}
+
+body.home2 div.scenario p.highlight {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 95px;
+  font-family: Helvetica, sans-serif;
+}
+
+body.home2 div.scenario h2 {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  color: #3671A1;
+  margin: 30px 0 5px 0;
+}
+
+body.home2 div.scenario div.content {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+
+body.home2 div.scenario div.tour {
+  margin-top: 0px;
+}
+
+body.home2 div.intro {
+  padding: 40px 0 20px 0;
+}
+
+body.home2 div.files {
+  padding: 0 0 40px 0;
+  background-image: url(/publicIMG/bkgd_files.png);
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+body.home2 div.itinerary {
+  padding: 0 0 40px 0;
+  background-image: url(/publicIMG/bkgd_itinerary.png);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+body.home2 div.howto {
+  padding: 0 0 20px 0;
+  background-image: url(/publicIMG/bkgd_howto.png);
+  background-repeat: no-repeat;
+	margin-bottom: 30px;
+}
+
+/* TOUR ----------------------------------------------------*/
+
+body.tour div.tour {
+	text-align: left;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 15px 0;
+	float: left;
+	font-size: 24px;
+	width: 100%;
+}
+
+body.tour div.tour h3 {
+	font-size: 16px;
+	font-family: georgia, times;
+	font-weight: normal;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+div.tourshot img {
+	padding: 1px;
+	border: 1px solid #ccc;
+}
+
+body.tour div.top {
+	background-image: none;
+	background-color: transparent;
+	border-bottom: none;
+}
+
+body.tour div.tourintro {
+  float: left;
+  overflow: hidden;
+  width: 610px;
+}
+
+body.tour div.tourintro h1 {
+  text-align: left;
+  margin: 10px 0 15px 0;
+}
+
+body.tour div.tourintro p {
+  text-align: left;
+}
+
+body.tour div.tourimage {
+  float: left;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 150px;
+}
+
+body.tour table.email, table.threecol {
+  margin-top: 20px;
+  background-color: #e8e8e8;
+  border: 1px solid #ccc;
+}
+
+body.tour table.email td {
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+body.tour table.email td.text {
+  padding: 15px;
+  padding-top: 0;
+}
+
+body.tour table.email td h3 {
+  margin: 8px 0 3px 0;
+  font-size: 14px;
+}
+
+body.tour table.email td p, table.threecol td p {
+  font-size: 14px;
+}
+
+body.tour table.email td img, table.threecol td img {
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+body.tour table.threecol td.example {
+  vertical-align: top;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+body.tour table.threecol td.example h2 {
+  color: #cc0000;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+table.highlights {
+	width: 720px;
+	margin: 0;
+}
+
+table.highlights td img {
+	border: 1px solid #ccc;
+	padding: 1px;
+}
+
+table.highlights td {
+	vertical-align: top;
+	padding: 10px 5px 10px 0;
+	width: 3%;
+}
+
+table.highlights th {
+	background-color: #333;
+	padding: 3px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+table.highlights td.sliver {
+	width: 150px;
+}
+
+table.highlights td.content {
+	width: 200px;
+	text-align: left;
+}
+
+table.highlights td h2 {
+	font-size: 14px;
+	color: #000;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+table.highlights td p {
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+}
+
+
+/* MISC ----------------------------------------------------*/
+
+body.signup4 div.statement h3 {
+	color: #444;
+	font-family: georgia,helvetica,arial,sans-serif;
+	font-size: 26px;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+body.signup4 div.statement {
+	width: 950px;
+	margin: 0 auto;
+}
+
+div.actionsignup {
+  background-color: #696;
+	text-align: center;
+	color: #cf9;
+	font-family: Helvetica, sans-serif;
+	font-size: 21px;
+	width: 100%;
+	margin: -30px 0 30px 0;
+}
+
+div.actionsignup strong {
+	color: #FFF9DF;
+}
+
+/* CHANGES ----------------------------------------------------*/
+
+body.changes div.changes {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+body.changes div.changes h1 {
+  text-align: left;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+body.changes div.container h2 {
+  margin: 0 0 10px 0;
+}
+
+body.changes ul {
+  font-size: 14px;
+}
+
+body.changes li {
+  margin-bottom: 5px;
+}
+
+
+
+
+.error {
+  background-color: #ffcccc;
+  margin-bottom: 25px;
+  padding: 15px;
+  color: red;
+  border: 3px solid red;
+}
+ 
+
+.error p {
+  margin: 0;
+  color: #222;
+  font-size: 12px;
+}

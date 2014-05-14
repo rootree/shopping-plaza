@@ -1,0 +1,11 @@
+
+body{font-size:70%;}.fox_line,.body_line{font-size:1px;}
+div#logo img.logo_house{}.search_result{padding-bottom:5px;}.close_adv:hover{background-color:#c4c4c4;}
+td.catalog{height:30px!important;}
+
+
+td#mainContent{
+	width: auto !important;
+    width: 1000px;
+    min-width: 1000px;
+}

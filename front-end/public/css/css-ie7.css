@@ -1,0 +1,34 @@
+
+div#wrp {
+    margin-right: 20px;
+    padding-right: 20px !important;
+}
+ 
+.description {
+    border-left: 1px #dfdfdf solid !important;
+    width: 50%; 
+    position: relative;
+}
+
+ div#wrp div.notebook .descriptionBg .ygol {
+    z-index: 100;
+    left: -30px;
+}
+
+div#footer ul.footer-menu {
+    padding-top:5px;
+}
+div#footer ul.footer-menu > li {
+    float: left;
+}
+
+table.cartList td, table.cartList tr {
+    border: 1px solid #a9a9a9;
+} 
+table.cartList td {
+    border: 1px solid #dcdcdc;
+}
+
+div#wrp div.podtv #oformit input[type="submit"] {
+    right: 49px;
+}

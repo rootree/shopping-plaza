@@ -1,0 +1,35 @@
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+         .ui-button .ui-button-text {
+    font-size: 15px !important;
+}
+
+
+
+
+
+
+    .ui-widget .ui-widget{
+    font-size: 12px !important;
+}
+
+
+
+.ui-button .ui-button-text {
+ 
+line-height: 16px !important;
+}
+
+.ui-widget {
+
+font-size: 12px !important;
+}
+
+
+.ui-tabs .ui-tabs-nav  {
+
+ 
+}
+
+
+
+ }

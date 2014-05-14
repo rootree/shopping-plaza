@@ -1,0 +1,225 @@
+@import url('change.css'); 
+
+
+div#logo a{
+    color:#333333;
+}
+ul.top-menu li.current a {
+    color: #999900;
+}
+ul.top-menu > li a:hover {
+    color: #999900;
+}
+a.news-link:hover {
+    color: #ffd700;
+}
+div#content div#wrp a:hover {
+    color: #666600;
+}
+div#footer ul.footer-menu li.more ul {
+    background: #666600;
+}
+div#wrp div.web table {
+    color: #ffd700;
+    background: #ffffcc;
+}
+div#wrp div.podtv .cartList .price2 {
+    color: #875d09;
+}
+div#content div#l-side div.l-side-menu {
+    background: #ffff99;
+}
+
+div#content div#l-side ul li ul li a:hover {
+    color: #c7890c;
+}
+
+div#wrp div.web  .table2 {
+    background: #ffffcc ;
+}
+
+TD.itemParam{
+    background: #ffffcc;
+}
+
+
+
+
+
+
+
+
+
+
+div#header {
+    background: url(../img.template2/bg/header.gif) repeat-x;
+}
+
+
+
+div#header-content .add {
+    background: url(../img.template2/bg/add.gif) no-repeat;
+}
+
+div.status-bar  div.login p.reg {
+    background: url(../img.template2/icons/reg.gif) left 1px no-repeat;
+}
+
+div.status-bar  div.login p.auto {
+    background: url(../img.template2/icons/auto.gif) left 0px no-repeat;
+}
+
+ul.top-menu {
+    background: url(../img.template2/bg/top-menu.jpg) repeat-x;
+}
+
+ul.top-menu li.current {
+    background: url(../img.template2/bg/li.png) no-repeat;
+}
+
+ul.top-menu li.current a {
+    background: url(../img.template2/bg/li_a.png) no-repeat right;
+}
+
+
+ul.top-menu > li a:hover {
+    background: url(../img.template2/bg/li_a.png) no-repeat right;
+}
+
+ul.top-menu > li:hover {
+    background: url(../img.template2/bg/li.png) no-repeat;
+}
+
+ul.top-menu > li.bullet {
+    background: url(../img.template2/bg/bullet.jpg) no-repeat;
+}
+
+ul.top-menu > li.more a.up {
+    background: url(../img.template2/bg/up.gif) right 24px no-repeat;
+}
+
+ul.top-menu > li.more:hover a.up {
+    background: url(../img.template2/bg/down.gif) right 24px no-repeat;
+}
+ul.top-menu  li.more ul {
+    background: url(../img.template2/bg/ul_opacity.png);
+}
+div#content div#l-side p.prise { 
+    background: url(../img.template2/prise.gif) no-repeat;
+}
+
+div#content div#l-side ul li.active {
+    background: url(../img.template2/bg/l-side-li.png) no-repeat;
+}
+
+div#content div#l-side ul li.active a.li-active {
+    background: url(../img.template2/bg/l-side-li-a.png) right top no-repeat;
+}
+
+div#content div#l-side ul li ul li {
+    background: url(../img.template2/bg/arrow.gif) left 50% no-repeat;
+}
+
+
+div#content div#l-side ul li ul li:hover {
+    background: url(../img.template2/bg/arrow_blue_t.gif) left 50% no-repeat;
+}
+
+a.news-link { 
+    background: url(../img.template2/bg/arrow_black.gif) right 5px no-repeat;
+}
+
+a.news-link:hover {
+    background: url(../img.template2/bg/arrow_blue.gif) right 5px no-repeat;
+}
+
+#form1 input[type="text"] {
+    background: url(../img.template2/bg/input.gif) right 50% no-repeat; 
+}
+
+div#wrp div.new div p.cost {
+    background: url(../img.template2/bg/buy.gif) no-repeat;
+}
+div#footer ul.footer-menu {
+    background: url(../img.template2/bg/footer.gif) top repeat-x;
+}
+div#footer ul.footer-menu li.more {
+    background: url(../img.template2/bg/footer_up.gif) no-repeat right 30px;
+}
+
+div#footer ul.footer-menu li.more:hover {
+    background: url(../img.template2/bg/footer_down.gif) no-repeat right 30px;
+}
+
+div#wrp ul li {
+    background: url(../img.template2/bg/arrow_black.gif)  no-repeat left 7px  ;
+}
+
+div#wrp ul li:hover {
+    background: url(../img.template2/bg/arrow_blue.gif)  no-repeat left 7px  ;
+}
+
+div#wrp div.web ul > li {
+    background: url(../img.template2/bg/web-li.gif) left 5px no-repeat;
+}
+
+div#wrp div#request div.contact-face input[type="submit"] {
+    background: url(../img.template2/icons/sub.png) no-repeat;
+}
+div#wrp div.adress .svyazForm input[type="submit"] {
+    background: url(../img.template2/icons/send.png) no-repeat;
+}
+
+#deliverySubmit {
+    background: url(../img.template2/icons/send.png) no-repeat;
+}
+
+div#wrp div.podtv .cartList .top {
+    background: url(../img.template2/icons/cartTableBg.gif) repeat-x;
+}
+
+div#wrp div.podtv .cartList .top td {
+    background: url(../img.template2/icons/line.gif) no-repeat right;
+}
+
+
+
+div#wrp div.podtv #yes  input[type="submit"] { 
+    background: url(../img.template2/icons/yes.png) no-repeat; 
+}
+ 
+div#wrp div.podtv .allPrice .itogo2 {
+    background: url(../img.template2/bg/buy.gif) no-repeat right;
+}
+
+div#wrp div.podtv #oformit input[type="submit"] {
+    background: url(../img.template2/icons/oformit.png) no-repeat;
+}
+
+div#wrp div.notebook .gallery .img .ico-new {
+    background: url(../img.template2/icons/new.png) no-repeat;
+}
+
+div#wrp div.notebook .descriptionBg .ygol {
+    background: url(../img.template2/icons/ygol.png) no-repeat;
+}
+
+
+div#wrp div.notebook  #buy input[type="submit"] {
+    background: url(../img.template2/icons/buy.png) no-repeat;
+}
+
+
+
+div#wrp div.notebook  #buyFoot input[type="submit"] {
+    background: url(../img.template2/icons/buy.png) no-repeat;
+}
+
+.kolvo .ygol2 {
+    background: url(../img.template2/icons/kolvo.png) no-repeat; 
+}
+
+
+div#wrp ul li {
+    background: url(../img.template2/bg/arrow_black.gif)  no-repeat left 7px  ;
+}
