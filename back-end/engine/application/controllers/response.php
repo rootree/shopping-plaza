@@ -57,11 +57,6 @@ class Response_Controller extends Web_Controller {
 
                 if(count($status)){
 
-                    require Kohana::find_file('vendor', 'SMSer');
-                    SMSer::send('79057374040',
-                        'В Shopping-Plaza новый вопрос от пользователей.' ,
-                        'Shopping');
-
                     // Отправка администратору Shopping-Plaza
                     //
                     $subject =  'Shopping-Plaza с обратной связью №' . $data['typer'];

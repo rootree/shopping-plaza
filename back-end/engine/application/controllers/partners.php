@@ -5,45 +5,49 @@
  * @package    Notify
  * @author     Ivan Chura
  */
-class Partners_Controller extends Web_Controller {
+class Partners_Controller extends Web_Controller
+{
 
     const SUBPAGE_MAIN = 'main';
-    const SUBPAGE_ADD = 'add';
+    const SUBPAGE_ADD  = 'add';
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
         $this->accessRules = array(
-            'index' => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER,
-            'edit' => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER, 
-            'add' => ACCESS_ADMIN + ACCESS_MODER  + ACCESS_VIEWER,
-            'info' => ACCESS_ADMIN + ACCESS_MODER  + ACCESS_VIEWER,
-            'delete' => ACCESS_ADMIN + ACCESS_MODER  + ACCESS_VIEWER,
+            'index'  => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER,
+            'edit'   => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER,
+            'add'    => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER,
+            'info'   => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER,
+            'delete' => ACCESS_ADMIN + ACCESS_MODER + ACCESS_VIEWER,
         );
 
-        $this->selected_page   = PAGE_PARTNERS;
+        $this->selected_page = PAGE_PARTNERS;
 
-        if(array_key_exists('up', $_REQUEST)){
+        if (array_key_exists('up', $_REQUEST)) {
             $this->info = 'Партнёр успешно изменён.';
         }
-        if(array_key_exists('droped', $_REQUEST)){
+        if (array_key_exists('droped', $_REQUEST)) {
             $this->info = 'Партнёр успешно удален.';
         }
-        if(array_key_exists('new', $_REQUEST)){
+        if (array_key_exists('new', $_REQUEST)) {
             $this->info = 'Партнёр успешно добавлен.';
         }
     }
 
- 
-    public function index() {
+
+    public function index()
+    {
 
         $this->template->content = new View('partners/index');
 
-        $this->template->title = 'Партнёры';
+        $this->template->title  = 'Партнёры';
         $this->selected_subpage = Partners_Controller::SUBPAGE_MAIN;
 
-        if(!$this->haveAccess()){
+        if (!$this->haveAccess()) {
             return;
-        };
+        }
+        ;
 
         $offset = $this->uri->segment('page');
 
@@ -54,20 +58,20 @@ class Partners_Controller extends Web_Controller {
 
         $offset = $page_limit * ($offset - 1);
 
-        if(!isset($offset) || $offset <= 0){
+        if (!isset($offset) || $offset <= 0) {
             $offset = 0;
         }
 
         $this->template->content->items = $this->db->select('*')->from($table)->
-                where($where)->offset($offset)->limit($page_limit)->orderby('partner_id', 'acs')->get();
+            where($where)->offset($offset)->limit($page_limit)->orderby('partner_id', 'acs')->get();
 
         $count_records = $this->db->from($table)->
-                where($where)->count_records();
+            where($where)->count_records();
 
         $pagination = new Pagination(array(
 
             // Base_url will default to the current URI
-           'base_url'    => 'partners/index',
+            'base_url'       => 'partners/index',
 
             // The URI segment (integer) in which the pagination number can be found
             // The URI segment (string) that precedes the pagination number (aka "label")
@@ -89,58 +93,60 @@ class Partners_Controller extends Web_Controller {
 
             // If there is only one page, completely hide all pagination elements
             // Pagination->render() will return an empty string
-            'auto_hide'      => TRUE,
+            'auto_hide'      => true,
         ));
 
 
-        $this->template->content->pagination = $pagination->render('digg');
-        $this->template->content->count_records = $count_records;
+        $this->template->content->pagination         = $pagination->render('digg');
+        $this->template->content->count_records      = $count_records;
         $this->template->content->current_first_item = $pagination->current_first_item;
     }
 
 
-    public function add() {
+    public function add()
+    {
 
         $this->template->content = new View('partners/add');
 
-        $this->template->title = 'Добавление нового партнёра';
+        $this->template->title  = 'Добавление нового партнёра';
         $this->selected_subpage = Partners_Controller::SUBPAGE_ADD;
 
-        if(!$this->haveAccess()){
+        if (!$this->haveAccess()) {
             return;
-        };
-  
-        if ($_POST){
+        }
+        ;
 
-            $data['title'] = ($_POST['partners']['title']);
+        if ($_POST) {
+
+            $data['title']   = ($_POST['partners']['title']);
             $data['annonce'] = ($_POST['partners']['annonce']);
-            
-            $data['tel'] = ($_POST['partners']['tel']);
+
+            $data['tel']     = ($_POST['partners']['tel']);
             $data['address'] = ($_POST['partners']['address']);
-            $data['fax'] = ($_POST['partners']['fax']);
-            $data['mail'] = ($_POST['partners']['mail']);
-            $data['www'] = ($_POST['partners']['www']);
-        
+            $data['fax']     = ($_POST['partners']['fax']);
+            $data['mail']    = ($_POST['partners']['mail']);
+            $data['www']     = ($_POST['partners']['www']);
+
             $data['firm_id'] = $this->firmID;
- 
-            if(empty($data['title'])){
+
+            if (empty($data['title'])) {
                 $this->errorFields[] = "Название";
             }
-            if(empty($data['annonce']) || strlen($data['annonce']) == 4){
+            if (empty($data['annonce']) || strlen($data['annonce']) == 4) {
                 $this->errorFields[] = "Описание";
             }
 
-            if(is_null($this->error) && !count($this->errorFields)){
+            if (is_null($this->error) && !count($this->errorFields)) {
 
                 $status = $this->db->insert('partners', $data);
 
-                if(count($status)){
+                if (count($status)) {
                     $this->info = 'Уровень добавлен.';
                     url::redirect(url::site() . "partners/info/id/" . $status->insert_id() . "?new");
                     exit();
                 }
-            }else{
-                if($this->error == null){
+            } else {
+                if ($this->error == null) {
                     $this->error = $this->completeErrorFieldsMessage('Информация о парнёре не добавлена. ');
                 }
             }
@@ -148,100 +154,106 @@ class Partners_Controller extends Web_Controller {
     }
 
 
-    public function delete() {
+    public function delete()
+    {
 
-        if(!$this->haveAccess()){
+        if (!$this->haveAccess()) {
             return;
-        };
+        }
+        ;
 
         $id = intval($this->uri->segment('id'));
 
-        $status = $this->db->delete('partners', array('partner_id' => $id,'firm_id' => $this->firmID ));
+        $status = $this->db->delete('partners', array('partner_id' => $id, 'firm_id' => $this->firmID));
 
-        if(count($status)){ 
+        if (count($status)) {
             url::redirect(url::site() . "partners/?droped");
             exit();
-        }else{
+        } else {
             Event::run('system.404');
         }
     }
 
-    public function edit() {
+    public function edit()
+    {
 
         $this->template->content = new View('partners/edit');
-        $this->selected_subpage = null;
+        $this->selected_subpage  = null;
 
-        if(!$this->haveAccess()){
+        if (!$this->haveAccess()) {
             return;
-        };
+        }
+        ;
 
         $id = intval($this->uri->segment('id'));
 
-        if ($_POST){
+        if ($_POST) {
 
-            $data['title'] = ($_POST['partners']['title']); 
+            $data['title']   = ($_POST['partners']['title']);
             $data['annonce'] = ($_POST['partners']['annonce']);
-            $data['tel'] = ($_POST['partners']['tel']);
+            $data['tel']     = ($_POST['partners']['tel']);
             $data['address'] = ($_POST['partners']['address']);
-            $data['fax'] = ($_POST['partners']['fax']);
-            $data['mail'] = ($_POST['partners']['mail']);
-            $data['www'] = ($_POST['partners']['www']);
+            $data['fax']     = ($_POST['partners']['fax']);
+            $data['mail']    = ($_POST['partners']['mail']);
+            $data['www']     = ($_POST['partners']['www']);
 
-            if(empty($data['title'])){
+            if (empty($data['title'])) {
                 $this->errorFields[] = "Название";
             }
-            if(empty($data['annonce']) || strlen($data['annonce']) == 4){
+            if (empty($data['annonce']) || strlen($data['annonce']) == 4) {
                 $this->errorFields[] = "Описание";
             }
 
-            if(is_null($this->error) && !count($this->errorFields)){
+            if (is_null($this->error) && !count($this->errorFields)) {
 
                 $status = $this->db->update('partners', $data, array('partner_id' => $id, 'firm_id' => $this->firmID));
 
-                if(count($status)){ 
+                if (count($status)) {
                     url::redirect(url::site() . "partners/?up");
                     exit();
-                } 
-            }else{
-                if($this->error == null){
+                }
+            } else {
+                if ($this->error == null) {
                     $this->error = $this->completeErrorFieldsMessage('Информация о парнёре не изменена. ');
                 }
-            } 
+            }
         }
- 
-        $table = "partners";
-        $where = "partner_id = " . $id . " and firm_id = " . $this->firmID;
+
+        $table                         = "partners";
+        $where                         = "partner_id = " . $id . " and firm_id = " . $this->firmID;
         $this->template->content->item = $this->db->select('*')->from($table)->
-                where($where)->get();
+            where($where)->get();
         $this->template->content->item = $this->template->content->item[0];
 
-        if(!empty($this->template->content->item)){
+        if (!empty($this->template->content->item)) {
             $this->template->title = "Изменение партнёра «" . html::specialchars($this->template->content->item->title) . '»';
-        }else{
+        } else {
             Event::run('system.404');
         }
     }
- 
 
-    public function info() {
+
+    public function info()
+    {
 
         $this->template->content = new View('partners/info');
-        $this->selected_subpage = null;
+        $this->selected_subpage  = null;
 
-        if(!$this->haveAccess()){
+        if (!$this->haveAccess()) {
             return;
-        };
+        }
+        ;
 
-        $id = intval($this->uri->segment('id'));
-        $table = "partners";
-        $where = "partner_id = " . $id . " and firm_id = " . $this->firmID;
+        $id                            = intval($this->uri->segment('id'));
+        $table                         = "partners";
+        $where                         = "partner_id = " . $id . " and firm_id = " . $this->firmID;
         $this->template->content->item = $this->db->select('*')->from($table)->
-                where($where)->get(); 
+            where($where)->get();
         $this->template->content->item = $this->template->content->item[0];
 
-        if(!empty($this->template->content->item)){
+        if (!empty($this->template->content->item)) {
             $this->template->title = "Парнёр «" . html::specialchars($this->template->content->item->title) . '»';
-        }else{
+        } else {
             Event::run('system.404');
         }
     }

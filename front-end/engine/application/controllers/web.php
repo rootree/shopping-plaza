@@ -5,7 +5,6 @@ set_time_limit(0);
 #session_set_cookie_params(83000,"/","c-net-shopping.ru");
 #session_set_cookie_params(1,"/","media.c-net-shopping.ru");
 
-
 function formula($key)
 {
     return $key->price;
@@ -15,19 +14,6 @@ function getKeyWords($words)
 {
     return ',' . str_replace(' ', ',', $words);
 }
-
-
-header('X-Powered-By: Turbo Pascal 7.01');
-
-$etag = md5($_SERVER['REQUEST_URI']);
-$etag = substr($etag, 0, 8) . '-' . substr($etag, 8, 7) . '-' . substr($etag, 15, 8);
-header('ETag: "' . $etag . '"');
-
-/* header("Last-Modified: " . gmdate("D, d M Y H:i:s", time()-10) . " GMT");
-#header("Expires: " . gmdate("D, d M Y H:i:s", time() + 5) . " GMT");
-header("Date: " . gmdate("D, d M Y H:i:s", time() + 5) . " GMT");
-#header("Pragma: no-cache");
-#header("Cache-Control: max-age=1, s-maxage=1, cache, must-revalidate"); */
 
 /**
  * подготовительная обработка перед любой страницей
@@ -128,9 +114,7 @@ abstract class Web_Controller extends Template_Controller
             unset($this->firm->mainpage);
 
             $this->session->set("firm", $this->firm);
-
         }
-
 
         $this->template = 'kohana/' . $this->firm->template;
 

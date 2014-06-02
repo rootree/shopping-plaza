@@ -165,11 +165,6 @@ class Reg_Controller extends Web_Controller {
                         $this->session->set("access", ACCESS_ADMIN);
                         $this->session->set("moderId", $status->insert_id());
                         $this->session->set("firmId", $dataUser['firm_id']);
- 
-                        require Kohana::find_file('vendor', 'SMSer'); 
-                        SMSer::send('79057374040',
-                            'В Shopping-Plaza новый пользователь, приятно.' ,
-                            'Shopping');
 
                         require Kohana::find_file('vendor', 'Mailer');
                         Mailer::regOnSP($dataUser['user_mail'] , $dataUser['user_name'], $hash, $data['domain'], $data['title'], !empty($domain_own));

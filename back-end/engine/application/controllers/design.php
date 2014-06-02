@@ -16,8 +16,6 @@ class Design_Controller extends Web_Controller {
 
         $this->selected_page = PAGE_DESIGN;
 
- 
-
     }
   
 } // End Welcome Controller

@@ -41,19 +41,11 @@ class Dashboard_Controller extends Web_Controller {
             }
 
             if(!empty($this->user->user_word)){
-/*
-                $data['confirmed_code'] = 0;
-                $data['confirmed'] = CONFIRM_DONE;
-                $this->db->update('moders', $data, array('user_id' => $this->moderId,'firm_id' => $this->firmID ));
-               */
+
             } else {
 
                 url::redirect(url::site() . "settings/useredit/id/" . $this->moderId . "?newPass" );
-            /*    $this->error .=
-                        'Сейчас вы подтвердили вашу пренадлежность а Ваш аккаунт не имеет пароля, настоятельно рекомендую его установить:
 
-    <a href="' . url::site() . 'settings/useredit/id/' . $this->moderId . '">Настройки пользоватлея</a>' .$this->NL();
-*/
                 exit();
             }
         }

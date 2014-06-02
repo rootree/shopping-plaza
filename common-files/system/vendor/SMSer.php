@@ -11,7 +11,7 @@ class SMSer{
         $password = "******";
 
         $result = smsapi_push_msg_nologin($email, $password, $toNumber, $content, array("sender_name"=>format::do_latin($senderName)));
- var_dump($result);
+
         $code = (is_array($result)) ? $result[0] : 999;
  
         $db = new Database;
