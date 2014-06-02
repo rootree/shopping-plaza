@@ -54,7 +54,9 @@ SMS-ки используются для уведомлениях о новых 
  что происходит с магазином через SMS, то эта очень полезная штука.
 
 Сейчас интеграция сделана с SMS24x7 [http://sms24x7.ru/](http://sms24x7.ru/). Данные авторизации для SMS24x7 указываются тут:
+```
 ./common-files/system/vendor/SMSer.php
+```
 
 #### Шлюз со службой доставки
 
@@ -62,8 +64,14 @@ SMS-ки используются для уведомлениях о новых 
 в службу доставки, где на стороне доставки, происходит регистрация заказа, обработка, и отправка клиенту.
 
 Сейчас интеграция сделана с Axiomus [http://www.axiomus.ru/](http://www.axiomus.ru/) и работает только для одного магазина
-(пример: ./back-end/engine/application/controllers/orders.php, Orders_Controller::info),
-Настроить авторизацию можно тут ./common-files/system/vendor/Axiomus.php.
+(пример: Orders_Controller->info),
+```
+./back-end/engine/application/controllers/orders.php
+```
+Настроить авторизацию можно тут 
+```
+./common-files/system/vendor/Axiomus.php.
+```
 
 ## Настройки
 
