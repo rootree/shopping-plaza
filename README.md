@@ -7,14 +7,15 @@
 
 ## Требования
 
-Web server (Apache | nginx)
-PHP 5.3
-Mysql 5
-ImageMagick 6
+* Web server (Apache | nginx)
+* PHP 5.3
+* Mysql 5
+* ImageMagick 6
 
 ## Установка
 
 В проекте есть две главные части:
+
 1. front-end - интернет-магазин, к примеру: [http://demo.shopping-plaza.ru/](http://demo.shopping-plaza.ru/)
 2. back-end - панель управления магазином [http://shopping-plaza.ru/](http://shopping-plaza.ru/)
 
@@ -32,6 +33,7 @@ backend и frontend использует одни и те же файлы ./comm
 Т.е. сейчас чтобы создать магазин, который будет работать на панели управления shopping-plaza.ru, нужно зарегистрировать домен,
 у регистратора указать NS сервера shopping-plaza.ru, сейчас они:
 
+| NS сервера        |
 | ----------------- |
 | ns1.selectel.org. |
 | ns2.selectel.org. |
